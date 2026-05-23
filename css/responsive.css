@@ -1,0 +1,89 @@
+﻿@media (max-width:769px) {
+
+    .footer-container,
+    .main-container {
+        padding: 40px 14px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 70px 0 50px;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .stat-card {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-stats .row > div:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .main-container,
+    .footer-container,
+    .section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-section {
+        min-height: auto;
+        padding-top: 70px;
+    }
+
+    .hero-heading {
+        font-size: 2.6rem;
+    }
+
+    .section-heading-wrapper {
+        text-align: center;
+    }
+
+    .program-grid .col-md-6,
+    .feature-grid .col-md-6,
+    .training-grid .col-md-6,
+    .process-grid .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-badge {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .career-chip {
+        font-size: 0.9rem;
+        padding: 0.85rem 1rem;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}
