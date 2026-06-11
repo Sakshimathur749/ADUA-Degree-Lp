@@ -85,6 +85,52 @@ textarea {
     background: none;
 }
 
+button:disabled,
+.btn:disabled,
+.btn--blue:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+    background: #0724ae !important;
+    color: #ffffff !important;
+    border: none !important;
+    pointer-events: none;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.font-outfit {
+    font-family: var(--font-outfit);
+}
+
+.form-card {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-width: 500px;
+}
+
+.form-header,
+.form-body {
+    padding: 20px 30px;
+}
+
+.form-header {
+    background-color: #0724ae;
+}
+
+.border-radius-16 {
+    border-radius: 16px;
+}
+
+.border-radius-top-16 {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.form-title {
+    font-size: 28px;
+    line-height: 30px;
+}
+
 .container {
     width: var(--container);
     max-width: 100%;
@@ -312,7 +358,7 @@ textarea {
 }
 
 .btn--blue {
-    background: var(--color-primary);
+    background: var(--color-primary) !important;
     color: var(--color-white);
     box-shadow: 0 8px 10px -6px rgba(7, 36, 174, 0.05), 0 20px 25px -5px rgba(7, 36, 174, 0.05);
 }
@@ -464,7 +510,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: clamp(40px, 8vw, 80px) var(--page-pad) clamp(48px, 10vw, 120px);
+    padding: clamp(40px, 8vw, 80px) 14px;
     max-width: min(960px, 100%);
     width: 100%;
 }
@@ -1858,6 +1904,106 @@ textarea {
     font-size: 18px;
 }
 
+/* =========================================
+   DESKTOP FLOATING BUTTONS
+========================================= */
+
+.fabiconswindow {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+}
+
+.fabiconswindow .mob-action {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fabiconswindow .nav-item {
+    width: 60px;
+    height: 60px;
+    background: #23A455;
+    border-radius: 50%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.fabiconswindow .nav-item a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* =========================================
+   MOBILE + TABLET BOTTOM BAR
+========================================= */
+
+.resenqerymenu {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+
+    /* hide desktop buttons */
+    .fabiconswindow {
+        display: none;
+    }
+
+    /* show mobile bottom bar */
+    .resenqerymenu {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #23A455;
+        z-index: 99999;
+    }
+
+    .resenqerymenu .mob-action {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .resenqerymenu .nav-item {
+        width: 50%;
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .resenqerymenu .nav-item:last-child {
+        border-right: none;
+    }
+
+    .resenqerymenu .nav-item a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        color: #fff;
+        text-decoration: none;
+
+        padding: 16px 10px;
+
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .resenqerymenu .icons {
+        font-size: 22px;
+    }
+}
+
 /* ==========================================================================
    Responsive
    ========================================================================== */
@@ -2014,6 +2160,11 @@ textarea {
 
     .hero {
         min-height: auto;
+    }
+
+    .hero__form {
+        padding: clamp(30px, 8vw, 10px) var(--page-pad) clamp(48px, 10vw, 120px);
+
     }
 
     .hero__content {

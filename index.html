@@ -16,6 +16,8 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -94,23 +96,69 @@
             <div class="hero__bg">
                 <img src="./assets/image 2756.webp" alt="" width="1506" height="941" />
             </div>
-            <div class="hero__content">
-                <div class="hero__badge">
-                    <span class="hero__badge-dot"></span>
-                    <span class="hero__badge-text">Admissions Open 2026-27</span>
-                </div>
-                <h1 class="hero__title">
-                    Launch Your Aviation<br />
-                    Career with a <em>UGC-Recognized</em> BBA Degree
-                </h1>
-                <p class="hero__subtitle">
-                    Explore high-growth careers in Aviation, Airport Management,
-                    Hospitality, Cargo, Safety, and Drone Technology.
-                </p>
-                <div class="d-flex flex-column flex-sm-row gap-3">
-                    <a href="#AdmissionForm" class="btn btn-custom-primary mb-2 mb-sm-0 text-decoration-none">Book Free
-                        Counseling</a>
-                    <a href="#AdmissionForm" class="btn btn-custom-secondary text-decoration-none">View Courses</a>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="hero__content col-12 col-md-8">
+                        <div class="hero__badge">
+                            <span class="hero__badge-dot"></span>
+                            <span class="hero__badge-text">Admissions Open 2026-27</span>
+                        </div>
+                        <h1 class="hero__title">
+                            Launch Your Aviation<br />
+                            Career with a <em>UGC-Recognized</em> BBA Degree
+                        </h1>
+                        <p class="hero__subtitle">
+                            Explore high-growth careers in Aviation, Airport Management,
+                            Hospitality, Cargo, Safety, and Drone Technology.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <a href="#AdmissionForm"
+                                class="btn btn-custom-primary mb-2 mb-sm-0 text-decoration-none">Book
+                                Free
+                                Counseling</a>
+                            <a href="#AdmissionForm" class="btn btn-custom-secondary text-decoration-none">View
+                                Courses</a>
+                        </div>
+                    </div>
+                    <div class="z-10 hero__form col-12 col-md-4">
+                        <div class="form-card bg-white border-radius-16 w-100" id="AdmissionForm">
+                            <div
+                                class="form-title text-start font-outfit fw-700 p-4 form-header d-flex flex-column justify-content-center text-white border-radius-top-16 btn--blue">
+                                Admission Form
+                            </div>
+
+                            <div class="form-body pt-3 pt-md-5">
+                                <div id="AdmissionForm" class="fail__lead-form-panel">
+                                    <form class="contact-form" id="contactForm1" data-apply-form>
+                                        <div class="form-group w-100">
+                                            <label for="fullName">Full Name *</label>
+                                            <input type="text" name="name" autocomplete="name" placeholder="John Doe"
+                                                required>
+                                        </div>
+                                        <div class="form-group w-100">
+                                            <label for="email">Email Address *</label>
+                                            <input type="email" name="email" placeholder="john@example.com" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number *</label>
+                                            <input name="phone" type="tel" inputmode="tel" placeholder="+91 00000 00000"
+                                                maxlength="10" pattern="[0-9]{10}"
+                                                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);"
+                                                title="Please enter a valid 10-digit mobile number" required>
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <label for="message">Your Message *</label>
+                                            <textarea id="message" name="message"
+                                                placeholder="I'm interested in..."></textarea>
+                                        </div> -->
+                                        <input name="page_url" type="hidden">
+                                        <button type="submit" class="btn btn--blue" style="width:100%;">Send
+                                            Enquiry</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="hero-stats">
@@ -441,10 +489,10 @@
         <section class="video-banner">
             <div class="container">
                 <div class="video-banner__frame d-none d-md-block">
-                    <img src="./assets/image 2764.webp" alt="Aviation University Campus" width="1280" height="720" />
+                    <img src="./assets/BG Desktop.png" alt="Aviation University Campus" width="1280" height="720" />
                 </div>
                 <div class="video-banner__frame d-md-none d-block">
-                    <img src="./assets/image 2763.webp" alt="Aviation University Campus" width="1280" height="720" />
+                    <img src="./assets/BG-Mobile.png" alt="Aviation University Campus" width="1280" height="720" />
                 </div>
             </div>
         </section>
@@ -975,31 +1023,31 @@
                     <h2 class="section-title">Need Guidance?<br />Talk to Our Experts</h2>
                 </header>
                 <div class="contact-grid">
-                    <div id="AdmissionForm" class="fail__lead-form-panel" aria-labelledby="fail-lead-form-title">
-                        <form class="contact-form" id="contactForm" data-apply-form>
-                            <div class="d-flex flex-column flex-md-row gap-md-4 w-100">
-                                <div class="form-group w-100">
-                                    <label for="fullName">Full Name *</label>
-                                    <input type="text" name="name" type="text" autocomplete="name"
-                                        placeholder="John Doe" required>
-                                </div>
-                                <div class="form-group w-100">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" placeholder="john@example.com"
-                                        required />
-                                </div>
+                    <div id="AdmissionForm" class="fail__lead-form-panel">
+                        <form class="contact-form" id="contactForm2" data-apply-form>
+                            <div class="form-group w-100">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" name="name" autocomplete="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group w-100">
+                                <label for="email">Email Address *</label>
+                                <input type="email" name="email" placeholder="john@example.com" required />
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone Number *</label>
-                                <input name="phone" type="tel" inputmode="tel" autocomplete="tel"
-                                    placeholder="+91 00000 00000" required>
+                                <input name="phone" type="tel" inputmode="tel" placeholder="+91 00000 00000"
+                                    maxlength="10" pattern="[0-9]{10}"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);"
+                                    title="Please enter a valid 10-digit mobile number" required>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Your Message *</label>
-                                <textarea id="message" name="message" placeholder="I'm interested in..."></textarea>
-                            </div>
+                            <!-- <div class="form-group">
+                                            <label for="message">Your Message *</label>
+                                            <textarea id="message" name="message"
+                                                placeholder="I'm interested in..."></textarea>
+                                        </div> -->
                             <input name="page_url" type="hidden">
-                            <button type="submit" class="btn btn--blue" style="width:100%;">Send Enquiry</button>
+                            <button type="submit" class="btn btn--blue" style="width:100%;">Send
+                                Enquiry</button>
                         </form>
                     </div>
                     <div class="contact-info">
@@ -1048,6 +1096,64 @@
                 </div>
             </div>
         </section>
+        <div>
+
+            <!-- MOBILE / TABLET BOTTOM BAR -->
+            <div class="resenqerymenu" id="resenqerymenu">
+                <ul class="mob-action">
+
+                    <li class="nav-item">
+                        <a href="https://api.whatsapp.com/send?phone=9522123707" target="_blank">
+
+                            <span class="icons">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                            Whatsapp Now
+                        </a>
+                    </li>
+
+                    <li class="nav-item bg-1">
+                        <a href="tel:9522123707">
+                            <span class="icons">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            Call Now
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- DESKTOP FLOATING BUTTONS -->
+            <div class="fabiconswindow">
+
+                <ul class="mob-action">
+
+                    <li class="nav-item">
+                        <a href="https://api.whatsapp.com/send?phone=9522123707" target="_blank">
+
+                            <span class="icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-item bg-1">
+                        <a href="tel:9522123707">
+
+                            <span class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
     </main>
 
     <!-- Footer -->
@@ -1130,17 +1236,30 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer__heading">Newsletter</h4>
-                    <p class="footer__newsletter-text">Subscribe to get latest aviation news and admission updates.</p>
-                    <form class="footer__newsletter-form" id="newsletterForm">
-                        <input type="email" placeholder="Email Address" aria-label="Email Address" required />
-                        <button type="submit" class="footer__newsletter-btn" aria-label="Subscribe">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </form>
+                    <div class="gap-3 gap-md-4 mb-3 mb-md-4 d-flex flex-column">
+                        <div class=" fw-500 d-flex flex-column gap-2  ">
+                            <div
+                                class=" fw-700 footer-contact ls-1 text-start footer__heading d-flex gap-2 align-items-center ">
+                                <img src="./assets/LocationSVG.webp" width="20px" height="20px" alt="">
+                                Office Address :
+                            </div>
+                            <p class="footer__newsletter-text  font-inter fw-400 text-start contact-para mb-2">
+                                AIRDIVIT UDAN ACADEMY
+                                PRIVATE LIMITED 69, MASTER PLAN, CIVIL
+                                LINES SATNA, MP 485001, India
+                            </p>
+                        </div>
+                        <div class=" fw-500 d-flex flex-column gap-2  ">
+                            <div
+                                class=" fw-700 footer-contact ls-1 text-start footer__heading d-flex gap-2 align-items-center ">
+                                <img src="./assets/LocationSVG.webp" width="20px" height="20px" alt="">
+                                Campus Address :
+                            </div>
+                            <p class="footer__newsletter-text  font-inter fw-400 text-start contact-para mb-2">
+                                MGCG University, Chitrakoot
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer__bottom">
@@ -1152,39 +1271,50 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script>
-        const form = document.getElementById("contactForm");
         var THANK_YOU_URL = "https://edu.airdivitudan.com/thank-you/";
-        form.addEventListener("submit", async function (e) {
-            e.preventDefault();
+        const allForms = document.querySelectorAll("form[data-apply-form]");
 
-            form.page_url.value = window.location.href;
+        allForms.forEach(form => {
+            form.addEventListener("submit", async function (e) {
+                e.preventDefault();
+                const submitBtn = form.querySelector('button[type="submit"]');
+                if (submitBtn.disabled) return;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `
+    <span class="spinner-border spinner-border-sm me-2"></span>
+    Submitting...
+`;
+                if (form.elements.page_url) {
+                    form.elements.page_url.value = window.location.href;
+                }
 
-            const formData = {
-                name: form.name.value,
-                email: form.email.value,
-                phone: form.phone.value,
-                message: form.message.value,
-                page_url: form.page_url.value
-            };
+                const formData = {
+                    name: form.elements.name ? form.elements.name.value : "",
+                    email: form.elements.email ? form.elements.email.value : "",
+                    phone: form.elements.phone ? form.elements.phone.value : "",
+                    page_url: window.location.href
+                };
 
-            try {
-                const response = await fetch("https://script.google.com/macros/s/AKfycbyHYXYlljgCRPnJKnQmGtfK5y_Ovvc7QCvA0E-7anKI_bUzp2JvXwuLcEhE9c58s3v8Hw/exec", {
-                    method: "POST",
-                    body: JSON.stringify(formData)
-                });
+                try {
+                    const response = await fetch("https://script.google.com/macros/s/AKfycbyHYXYlljgCRPnJKnQmGtfK5y_Ovvc7QCvA0E-7anKI_bUzp2JvXwuLcEhE9c58s3v8Hw/exec", {
+                        method: "POST",
+                        body: JSON.stringify(formData)
+                    });
+                    const result = await response.json();
 
-                const result = await response.json();
-                console.log("Form submitted successfully!");
-                window.location.href = THANK_YOU_URL;
-                form.reset();
+                    console.log("Form submitted successfully!", result);
+                    form.reset();
+                    window.location.href = THANK_YOU_URL;
 
-            } catch (error) {
-                console.error(error);
-            }
+                } catch (error) {
+                    console.error("Submission Error: ", error);
+                }
+            });
         });
     </script>
     <script src="js/script.js"></script>
