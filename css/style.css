@@ -2409,3 +2409,33 @@ button:disabled,
         transition: none;
     }
 }
+
+
+.video-card {
+    padding: 16px;
+    border-radius: 32px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 10px 30px rgba(148, 163, 184, 0.15);
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.video-testimonals,
+.video-testimonals iframe {
+    aspect-ratio: 9 / 16;
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(148, 163, 184, 0.25);
+}
+
+.video-card h5 {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.video-card p {
+    font-size: 9px;
+    letter-spacing: 1px;
+}
