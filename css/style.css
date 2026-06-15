@@ -22,7 +22,7 @@
     --font-playfair: "Playfair Display", serif;
     --page-pad: clamp(16px, 4vw, 48px);
     --container: min(1280px, calc(100% - 2 * var(--page-pad)));
-    --section-pad-y: clamp(64px, 8vw, 96px);
+    --section-pad-y: clamp(54px, 8vw, 68px);
     --nav-h: 73px;
     --hero-min-h: min(1200px, 100svh);
     --radius-sm: 8px;
@@ -248,6 +248,10 @@ button:disabled,
 .btn-apply:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.section-gap {
+    gap: 100px
 }
 
 /* Typography utilities */
@@ -2322,6 +2326,10 @@ button:disabled,
 
     .contact-tagline {
         margin-top: 0px;
+    }
+
+    .section-gap {
+        gap: 80px
     }
 }
 
